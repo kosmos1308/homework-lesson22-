@@ -32,7 +32,7 @@ class RainbowViewController: ViewController {
     
 
     //MARK: - create TableView
-    func showTableView() {
+    private func showTableView() {
         tableView = UITableView(frame: view.bounds, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
