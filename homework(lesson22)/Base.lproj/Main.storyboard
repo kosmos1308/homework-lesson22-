@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xuv-H4-hAa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SSt-71-Vku">
+            <objects>
+                <navigationController id="Xuv-H4-hAa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zTp-Nh-Z3f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OK4-DG-3CL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Co8-di-kwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="-135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homework_lesson22_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHg-mm-LGa">
+                                <rect key="frame" x="173" y="433" width="68" height="30"/>
+                                <state key="normal" title="Rainbow"/>
+                                <connections>
+                                    <segue destination="hIP-a3-txb" kind="show" id="U9L-K6-Fb3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2h-zv-4Bu">
+                                <rect key="frame" x="158" y="592" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Traffic light"/>
+                                <connections>
+                                    <segue destination="97a-gT-bav" kind="show" id="Ifu-ed-dxX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHg-mm-LGa" secondAttribute="trailing" constant="173" id="8XG-Pf-Nrb"/>
+                            <constraint firstItem="yHg-mm-LGa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="345" id="ODE-Gm-Abm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yHg-mm-LGa" secondAttribute="bottom" constant="399" id="SFA-Ub-2PN"/>
+                            <constraint firstItem="yHg-mm-LGa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="173" id="k9q-yA-4Pi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I4x-Zr-FmL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369.56521739130437" y="-135.26785714285714"/>
+        </scene>
+        <!--Rainbow View Controller-->
+        <scene sceneID="cFd-IU-Dva">
+            <objects>
+                <viewController storyboardIdentifier="RainbowViewController" id="hIP-a3-txb" customClass="RainbowViewController" customModule="homework_lesson22_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hz9-2N-W02">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Oqz-Iz-FJq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vuv-VC-H5V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcf-WN-s4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="-390"/>
+        </scene>
+        <!--Custom Table View Controller-->
+        <scene sceneID="OZA-tl-J0I">
+            <objects>
+                <viewController id="97a-gT-bav" customClass="CustomTableViewController" customModule="homework_lesson22_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNC-Pn-d6J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eh7-q1-Vl0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eh7-q1-Vl0" firstAttribute="top" secondItem="CoL-BT-acE" secondAttribute="top" id="db1-Cw-jDb"/>
+                            <constraint firstItem="eh7-q1-Vl0" firstAttribute="leading" secondItem="CoL-BT-acE" secondAttribute="leading" id="gFd-ap-u3V"/>
+                            <constraint firstItem="CoL-BT-acE" firstAttribute="trailing" secondItem="eh7-q1-Vl0" secondAttribute="trailing" id="ibs-cR-kuE"/>
+                            <constraint firstItem="CoL-BT-acE" firstAttribute="bottom" secondItem="eh7-q1-Vl0" secondAttribute="bottom" id="lVe-TY-dsd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CoL-BT-acE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oKw-Zd-6nF"/>
+                    <connections>
+                        <outlet property="customTableView" destination="eh7-q1-Vl0" id="Z5Y-Xj-638"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F65-JP-5Cg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="273"/>
+        </scene>
+    </scenes>
+</document>
